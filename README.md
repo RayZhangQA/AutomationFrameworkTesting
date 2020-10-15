@@ -36,22 +36,11 @@ Compass Digital Lab - QA Specialist Interview Assessment
 
 ##### 1. Running the test as TestNG test for each class
 ##### 2. Running from testng.xml
-##### 3. mvn command line
-###### 
-* Search log4j maven dependency
-* Append the dependency to pom.xml
-* Check if Project//Build Automatically is selected.
-* Add resource folder of "log4j.xml" to "pom.xml" file
+##### 3. Running from mvn command line
 
-	<resources>
-			<resource>
-				<directory>src/main/recources</directory>
-				<filtering>true</filtering>
-		</resource>
-	<resources>
-	
-* Add the source file to java build path - otherwise the system does not know where to find the log4j2.xml configuration file.2
-* right click project ==> Build Path ==> Configure Build Path... ==> Java Build Path//Source Folde
+	mvn clean test
+
+
 
 ##### 7. Fix the framework issues by tweaking TestNG configuration file.
 * The 1st and 2nd windows are not closed before the 3rd window opens. They all closed after the tests are completed.

@@ -1,4 +1,5 @@
-D:\eclipse-workspace\BuildAutoFWKFromScratch\src\main\java\utilities\Base.java
-D:\eclipse-workspace\BuildAutoFWKFromScratch\src\main\java\pageObjects\LoginPage.java
-D:\eclipse-workspace\BuildAutoFWKFromScratch\src\main\java\utilities\ScreenshotListeners.java
-D:\eclipse-workspace\BuildAutoFWKFromScratch\src\main\java\pageObjects\LogoutPage.java
+D:\eclipse-workspace\AutomationFrameworkTesting\src\main\java\resources\ScreenshotListener.java
+D:\eclipse-workspace\AutomationFrameworkTesting\src\main\java\utilities\Base.java
+D:\eclipse-workspace\AutomationFrameworkTesting\src\main\java\pageObjects\LoginPage.java
+D:\eclipse-workspace\AutomationFrameworkTesting\src\main\java\pageObjects\LogoutPage.java
+D:\eclipse-workspace\AutomationFrameworkTesting\src\main\java\resources\ExtentReporterNG.java

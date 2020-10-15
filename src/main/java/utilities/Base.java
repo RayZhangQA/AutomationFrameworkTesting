@@ -1,11 +1,17 @@
 package utilities;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -47,4 +53,18 @@ public class Base {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
+
+	public static void getScreenshot(String testCaseName) throws IOException {
+		// TODO Auto-generated method stub
+		String timestamp = new SimpleDateFormat("yyyy_MM_dd__hh_mm_ss")
+				.format(new Date());
+		File scrFile = ((TakesScreenshot) driver)
+				.getScreenshotAs(OutputType.FILE);
+		String scrFileName = System.getProperty("user.dir") + "\\Screenshots\\"
+				+ testCaseName + "_" + timestamp + ".png";
+		FileUtils.copyFile(scrFile, new File(scrFileName));
+		System.out.println("The screenshot of failed testcase has stored as "
+				+ scrFileName);
+	}
+
 }

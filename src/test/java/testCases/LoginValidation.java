@@ -2,6 +2,7 @@ package testCases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,6 +13,7 @@ import pageObjects.LoginPage;
 import utilities.Base;
 
 public class LoginValidation extends Base {
+	public WebDriver driver;
 
 	@BeforeMethod
 	public void initialize() throws IOException {
@@ -73,8 +75,7 @@ public class LoginValidation extends Base {
 
 	@AfterMethod
 	public void teardown() {
-		// driver.close();
-		driver.quit();
+		driver.close();
 		driver = null;
 	}
 

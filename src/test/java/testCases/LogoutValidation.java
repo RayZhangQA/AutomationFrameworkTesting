@@ -2,6 +2,7 @@ package testCases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,6 +13,7 @@ import pageObjects.LogoutPage;
 import utilities.Base;
 
 public class LogoutValidation extends Base {
+	public WebDriver driver;
 
 	@BeforeMethod
 	public void initialize() throws IOException {
@@ -36,6 +38,8 @@ public class LogoutValidation extends Base {
 		// successful login should see the message of "Welcome, automation test"
 		Assert.assertEquals(login.getWelcomeHome().getText(),
 				"Welcome, automation test");
+		// Assert.assertEquals(login.getWelcomeHome().getText(),
+		// "Fail this test for capture the screenshot");
 
 		LogoutPage logout = new LogoutPage(driver);
 		logout.getAccountBtn().click(); // click "account" button to get the
@@ -49,7 +53,7 @@ public class LogoutValidation extends Base {
 
 	@AfterMethod
 	public void teardown() {
-		driver.quit();
+		driver.close();
 		driver = null;
 	}
 }

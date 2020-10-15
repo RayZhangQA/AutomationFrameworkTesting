@@ -23,6 +23,7 @@ public class LoginPage {
 	}
 
 	By identifierError = By.className("o6cuMc");
+	// By identifierError = By.className("FailTheTestForScreenshotTest");
 	public WebElement getIdentifierError() {
 		return driver.findElement(identifierError);
 	}
