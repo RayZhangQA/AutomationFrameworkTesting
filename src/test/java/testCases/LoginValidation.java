@@ -73,7 +73,9 @@ public class LoginValidation extends Base {
 
 	@AfterMethod
 	public void teardown() {
-		driver.close();
+		// driver.close();
+		driver.quit();
+		driver = null;
 	}
 
 	// parameterizing the test data

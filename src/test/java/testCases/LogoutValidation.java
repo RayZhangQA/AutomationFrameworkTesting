@@ -3,8 +3,8 @@ package testCases;
 import java.io.IOException;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pageObjects.LoginPage;
@@ -13,7 +13,7 @@ import utilities.Base;
 
 public class LogoutValidation extends Base {
 
-	@BeforeTest
+	@BeforeMethod
 	public void initialize() throws IOException {
 		driver = initializeDriver();
 		driver.get(prop.getProperty("url"));
@@ -33,7 +33,7 @@ public class LogoutValidation extends Base {
 
 		// valid "username" and "password" should successfully logged into
 		// homepage
-		// successful login should see the message of "Welcom, automation test"
+		// successful login should see the message of "Welcome, automation test"
 		Assert.assertEquals(login.getWelcomeHome().getText(),
 				"Welcome, automation test");
 
@@ -47,8 +47,9 @@ public class LogoutValidation extends Base {
 		// After logout the message of "Choose an account" should show up.
 	}
 
-	@AfterTest
+	@AfterMethod
 	public void teardown() {
-		driver.close();
+		driver.quit();
+		driver = null;
 	}
 }

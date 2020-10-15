@@ -1,152 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="13" passed="12">
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="126573" started-at="2020-10-14T20:47:28 EDT" finished-at="2020-10-14T20:49:35 EDT">
+  <suite name="Suite" duration-ms="86419" started-at="2020-10-14T22:07:55 EDT" finished-at="2020-10-14T22:09:21 EDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="126573" started-at="2020-10-14T20:47:28 EDT" finished-at="2020-10-14T20:49:35 EDT">
+    <test name="Test" duration-ms="86419" started-at="2020-10-14T22:07:55 EDT" finished-at="2020-10-14T22:09:21 EDT">
       <class name="testCases.LogoutValidation">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LogoutValidation@2833cc44]" name="initialize" is-config="true" duration-ms="4426" started-at="2020-10-14T20:47:28 EDT" finished-at="2020-10-14T20:47:33 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LogoutValidation@2d8f65a4]" name="initialize" is-config="true" duration-ms="3158" started-at="2020-10-14T22:09:13 EDT" finished-at="2020-10-14T22:09:16 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="logoutValidation()[pri:0, instance:testCases.LogoutValidation@2833cc44]" name="logoutValidation" duration-ms="52" started-at="2020-10-14T20:49:35 EDT" finished-at="2020-10-14T20:49:35 EDT">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RAYDESKTOP', ip: '192.168.2.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53858}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1d6733016c7765ca48463368364857b3
-*** Element info: {Using=id, value=identifierId}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RAYDESKTOP', ip: '192.168.2.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53858}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1d6733016c7765ca48463368364857b3
-*** Element info: {Using=id, value=identifierId}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pageObjects.LoginPage.getIdentifier(LoginPage.java:17)
-at testCases.LogoutValidation.logoutValidation(LogoutValidation.java:26)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method status="PASS" signature="logoutValidation()[pri:0, instance:testCases.LogoutValidation@2d8f65a4]" name="logoutValidation" duration-ms="4382" started-at="2020-10-14T22:09:16 EDT" finished-at="2020-10-14T22:09:20 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutValidation -->
-        <test-method status="FAIL" signature="teardown()[pri:0, instance:testCases.LogoutValidation@2833cc44]" name="teardown" is-config="true" duration-ms="8" started-at="2020-10-14T20:49:35 EDT" finished-at="2020-10-14T20:49:35 EDT">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RAYDESKTOP', ip: '192.168.2.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53858}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1d6733016c7765ca48463368364857b3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RAYDESKTOP', ip: '192.168.2.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53858}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1d6733016c7765ca48463368364857b3
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at testCases.LogoutValidation.teardown(LogoutValidation.java:52)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
-at org.testng.TestRunner.afterRun(TestRunner.java:847)
-at org.testng.TestRunner.run(TestRunner.java:588)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LogoutValidation@2d8f65a4]" name="teardown" is-config="true" duration-ms="660" started-at="2020-10-14T22:09:20 EDT" finished-at="2020-10-14T22:09:21 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.LogoutValidation -->
       <class name="testCases.LoginValidation">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3377" started-at="2020-10-14T20:47:33 EDT" finished-at="2020-10-14T20:47:36 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3881" started-at="2020-10-14T22:07:55 EDT" finished-at="2020-10-14T22:07:59 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="passwordValidations" duration-ms="3679" started-at="2020-10-14T20:47:36 EDT" data-provider="getPassword" finished-at="2020-10-14T20:47:40 EDT">
+        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="passwordValidations" duration-ms="3705" started-at="2020-10-14T22:07:59 EDT" data-provider="getPassword" finished-at="2020-10-14T22:08:02 EDT">
           <params>
             <param index="0">
               <value>
@@ -162,15 +41,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="52" started-at="2020-10-14T20:47:40 EDT" finished-at="2020-10-14T20:47:40 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="630" started-at="2020-10-14T22:08:02 EDT" finished-at="2020-10-14T22:08:03 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3726" started-at="2020-10-14T20:47:40 EDT" finished-at="2020-10-14T20:47:43 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3312" started-at="2020-10-14T22:08:03 EDT" finished-at="2020-10-14T22:08:06 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="passwordValidations" duration-ms="1704" started-at="2020-10-14T20:47:43 EDT" data-provider="getPassword" finished-at="2020-10-14T20:47:45 EDT">
+        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="passwordValidations" duration-ms="1539" started-at="2020-10-14T22:08:06 EDT" data-provider="getPassword" finished-at="2020-10-14T22:08:08 EDT">
           <params>
             <param index="0">
               <value>
@@ -186,15 +65,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="4400" started-at="2020-10-14T20:47:45 EDT" finished-at="2020-10-14T20:47:50 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="623" started-at="2020-10-14T22:08:08 EDT" finished-at="2020-10-14T22:08:08 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3967" started-at="2020-10-14T20:47:50 EDT" finished-at="2020-10-14T20:47:53 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3468" started-at="2020-10-14T22:08:08 EDT" finished-at="2020-10-14T22:08:12 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="passwordValidations" duration-ms="2140" started-at="2020-10-14T20:47:53 EDT" data-provider="getPassword" finished-at="2020-10-14T20:47:56 EDT">
+        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="passwordValidations" duration-ms="1707" started-at="2020-10-14T22:08:12 EDT" data-provider="getPassword" finished-at="2020-10-14T22:08:14 EDT">
           <params>
             <param index="0">
               <value>
@@ -210,15 +89,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="4402" started-at="2020-10-14T20:47:56 EDT" finished-at="2020-10-14T20:48:00 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="614" started-at="2020-10-14T22:08:14 EDT" finished-at="2020-10-14T22:08:14 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3295" started-at="2020-10-14T20:48:00 EDT" finished-at="2020-10-14T20:48:03 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3200" started-at="2020-10-14T22:08:14 EDT" finished-at="2020-10-14T22:08:17 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="passwordValidations" duration-ms="2045" started-at="2020-10-14T20:48:03 EDT" data-provider="getPassword" finished-at="2020-10-14T20:48:05 EDT">
+        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="passwordValidations" duration-ms="2012" started-at="2020-10-14T22:08:17 EDT" data-provider="getPassword" finished-at="2020-10-14T22:08:19 EDT">
           <params>
             <param index="0">
               <value>
@@ -234,15 +113,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="4407" started-at="2020-10-14T20:48:05 EDT" finished-at="2020-10-14T20:48:10 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="645" started-at="2020-10-14T22:08:19 EDT" finished-at="2020-10-14T22:08:20 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3332" started-at="2020-10-14T20:48:10 EDT" finished-at="2020-10-14T20:48:13 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3169" started-at="2020-10-14T22:08:20 EDT" finished-at="2020-10-14T22:08:23 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="passwordValidations" duration-ms="1872" started-at="2020-10-14T20:48:13 EDT" data-provider="getPassword" finished-at="2020-10-14T20:48:15 EDT">
+        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="passwordValidations" duration-ms="1815" started-at="2020-10-14T22:08:23 EDT" data-provider="getPassword" finished-at="2020-10-14T22:08:25 EDT">
           <params>
             <param index="0">
               <value>
@@ -258,15 +137,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="4395" started-at="2020-10-14T20:48:15 EDT" finished-at="2020-10-14T20:48:19 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="626" started-at="2020-10-14T22:08:25 EDT" finished-at="2020-10-14T22:08:26 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3904" started-at="2020-10-14T20:48:19 EDT" finished-at="2020-10-14T20:48:23 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3183" started-at="2020-10-14T22:08:26 EDT" finished-at="2020-10-14T22:08:29 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="usernameValidations" duration-ms="2821" started-at="2020-10-14T20:48:23 EDT" data-provider="getUsername" finished-at="2020-10-14T20:48:26 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="usernameValidations" duration-ms="2813" started-at="2020-10-14T22:08:29 EDT" data-provider="getUsername" finished-at="2020-10-14T22:08:32 EDT">
           <params>
             <param index="0">
               <value>
@@ -282,15 +161,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="4404" started-at="2020-10-14T20:48:26 EDT" finished-at="2020-10-14T20:48:30 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="630" started-at="2020-10-14T22:08:32 EDT" finished-at="2020-10-14T22:08:32 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3416" started-at="2020-10-14T20:48:30 EDT" finished-at="2020-10-14T20:48:34 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3173" started-at="2020-10-14T22:08:32 EDT" finished-at="2020-10-14T22:08:35 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="usernameValidations" duration-ms="2794" started-at="2020-10-14T20:48:34 EDT" data-provider="getUsername" finished-at="2020-10-14T20:48:37 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="usernameValidations" duration-ms="2831" started-at="2020-10-14T22:08:35 EDT" data-provider="getUsername" finished-at="2020-10-14T22:08:38 EDT">
           <params>
             <param index="0">
               <value>
@@ -306,15 +185,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="4393" started-at="2020-10-14T20:48:37 EDT" finished-at="2020-10-14T20:48:41 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="659" started-at="2020-10-14T22:08:38 EDT" finished-at="2020-10-14T22:08:39 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3766" started-at="2020-10-14T20:48:41 EDT" finished-at="2020-10-14T20:48:45 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3738" started-at="2020-10-14T22:08:39 EDT" finished-at="2020-10-14T22:08:43 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="usernameValidations" duration-ms="2806" started-at="2020-10-14T20:48:45 EDT" data-provider="getUsername" finished-at="2020-10-14T20:48:48 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="usernameValidations" duration-ms="2828" started-at="2020-10-14T22:08:43 EDT" data-provider="getUsername" finished-at="2020-10-14T22:08:45 EDT">
           <params>
             <param index="0">
               <value>
@@ -330,15 +209,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="4391" started-at="2020-10-14T20:48:48 EDT" finished-at="2020-10-14T20:48:52 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="623" started-at="2020-10-14T22:08:45 EDT" finished-at="2020-10-14T22:08:46 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3466" started-at="2020-10-14T20:48:52 EDT" finished-at="2020-10-14T20:48:56 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3171" started-at="2020-10-14T22:08:46 EDT" finished-at="2020-10-14T22:08:49 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="usernameValidations" duration-ms="2855" started-at="2020-10-14T20:48:56 EDT" data-provider="getUsername" finished-at="2020-10-14T20:48:58 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="usernameValidations" duration-ms="2716" started-at="2020-10-14T22:08:49 EDT" data-provider="getUsername" finished-at="2020-10-14T22:08:52 EDT">
           <params>
             <param index="0">
               <value>
@@ -354,15 +233,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="4392" started-at="2020-10-14T20:48:58 EDT" finished-at="2020-10-14T20:49:03 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="626" started-at="2020-10-14T22:08:52 EDT" finished-at="2020-10-14T22:08:53 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3374" started-at="2020-10-14T20:49:03 EDT" finished-at="2020-10-14T20:49:06 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3147" started-at="2020-10-14T22:08:53 EDT" finished-at="2020-10-14T22:08:56 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="usernameValidations" duration-ms="2921" started-at="2020-10-14T20:49:06 EDT" data-provider="getUsername" finished-at="2020-10-14T20:49:09 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="usernameValidations" duration-ms="2784" started-at="2020-10-14T22:08:56 EDT" data-provider="getUsername" finished-at="2020-10-14T22:08:59 EDT">
           <params>
             <param index="0">
               <value>
@@ -378,15 +257,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="4374" started-at="2020-10-14T20:49:09 EDT" finished-at="2020-10-14T20:49:13 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="645" started-at="2020-10-14T22:08:59 EDT" finished-at="2020-10-14T22:08:59 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3459" started-at="2020-10-14T20:49:13 EDT" finished-at="2020-10-14T20:49:17 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3159" started-at="2020-10-14T22:08:59 EDT" finished-at="2020-10-14T22:09:02 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="usernameValidations" duration-ms="2832" started-at="2020-10-14T20:49:17 EDT" data-provider="getUsername" finished-at="2020-10-14T20:49:20 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="usernameValidations" duration-ms="2902" started-at="2020-10-14T22:09:02 EDT" data-provider="getUsername" finished-at="2020-10-14T22:09:05 EDT">
           <params>
             <param index="0">
               <value>
@@ -402,15 +281,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="4374" started-at="2020-10-14T20:49:20 EDT" finished-at="2020-10-14T20:49:24 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="893" started-at="2020-10-14T22:09:05 EDT" finished-at="2020-10-14T22:09:06 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="initialize" is-config="true" duration-ms="3305" started-at="2020-10-14T20:49:24 EDT" finished-at="2020-10-14T20:49:27 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="initialize" is-config="true" duration-ms="3188" started-at="2020-10-14T22:09:06 EDT" finished-at="2020-10-14T22:09:09 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33f88ab]" name="usernameValidations" duration-ms="2810" started-at="2020-10-14T20:49:27 EDT" data-provider="getUsername" finished-at="2020-10-14T20:49:30 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="usernameValidations" duration-ms="2898" started-at="2020-10-14T22:09:09 EDT" data-provider="getUsername" finished-at="2020-10-14T22:09:12 EDT">
           <params>
             <param index="0">
               <value>
@@ -426,7 +305,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33f88ab]" name="teardown" is-config="true" duration-ms="4393" started-at="2020-10-14T20:49:30 EDT" finished-at="2020-10-14T20:49:35 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@27a8c74e]" name="teardown" is-config="true" duration-ms="628" started-at="2020-10-14T22:09:12 EDT" finished-at="2020-10-14T22:09:13 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
