@@ -40,65 +40,13 @@ Compass Digital Lab - QA Specialist Interview Assessment
 
 	mvn clean test
 
+# More Features
 
+##### 1. Screenshot on Failure - TestNG Listeners
+##### 2. Excellent HTML Reports on Test Execution - Extent - Report 
 
-##### 7. Fix the framework issues by tweaking TestNG configuration file.
-* The 1st and 2nd windows are not closed before the 3rd window opens. They all closed after the tests are completed.
-* This is because the TestNG configured the 3 classes inside 1 test. 
-* Define each class under 1 set of the test to avoid the windows closing issue. 
-* put "driver = null;" after driver.close(); -- release the memory.
-* Change the driver initialize to static that has more advantages. 
+##### 10. Enhancement
+* Integrate with BrowserStack for multiple Chrome versions validation
+* Intefrate with Jenkins for the flexibility running with schedule
+* Using different Data Driven method, such as Excel or CSV data Driven and database test data driven
 
-##### 8. Screenshot on Failure - TestNG Listeners
-* Add Apache commons-io maven dependency to pom.xml
-* Add getScreenshot() method in base class
-* Create a listener class and implements ITestListener
-* Invoke getScreenshot() in Failed Listener.
-* Configure testng.xml - adding the listener.
-
-			<listeners>
-				<listener class-name="Academy.Listeners"/>
-			</listeners> 
-
-##### 9. Excellent HTML Reports on Test Execution - Extent - Report API & Dashboard
-* Get the dependency of "extentreports" and add it to pom.xml
-* Get the ExtentReporterNG.java class to be added to the project
-* Add ExtentReporterNG as a listener.
-
-##### 10. Integrate the project to Jenkins CI tool
-* Jenkins installation
-* http://localhost:8080/ - Jenkins console
-* Jenkins ==> Manage Jenkins ==> Global Tool Configuration
-
->* JDK setup
->* GIT setup
->* Maven setup
-
-* New Item ==> Enter"E2EProject" ==> General ==> Advanced ==> Use custom workspace
-* Build ==> Add build step ==> Invoke top-level Maven targets ==> put the mvn command to the Goals
-* Optional - Build Triggers ==> Build periodically
-
-##### 11. Parameterize Jenkins Build with different browsers execution
-
-##### 12. Coding Standards - Private locators & Public methods to achieving Encapsulation 
-* OOPS Principle Framework
-
-##### 13. Remove hard coded Paths from everywhere in the Project
-
-##### 14. Achieve Chrome Headless Execution Mechanism
-
-##### 15. How Inheritance is achieved in Framework
-
-##### 16. Where are Interfaces used in the framework
-
-##### 17. Can there be multiple @Test methods in one single class? What changes needed in Testng.xml file to club multiple @Test methods into one single Test Tag.
-
-##### 18. Can driver be static without initializing it form every Test?
-
-
-
-##### 19. Enhancement
-* Add the timestamp to the screenshot file.
-* Add the webdrivers to resources folder and change the path to dynamic path
-
-* 
