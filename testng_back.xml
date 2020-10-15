@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	
 	<listeners>
 		<listener class-name = "resources.ScreenshotListener"/>
 		<listener class-name = "resources.ExtentReporterNG"/>
@@ -10,7 +11,7 @@
 		<classes>
 			<class name="testCases.LoginValidation"/>
 			<class name="testCases.LogoutValidation"/>
-			<class name="testCases.HomeValidation"/>
 		</classes>
 	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->

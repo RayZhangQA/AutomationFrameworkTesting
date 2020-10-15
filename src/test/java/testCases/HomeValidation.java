@@ -8,10 +8,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import pageObjects.LogoutPage;
+import pageObjects.HomePage;
 import utilities.Base;
 
-public class LogoutValidation extends Base {
+public class HomeValidation extends Base {
 	public WebDriver driver;
 
 	@BeforeMethod
@@ -19,26 +19,24 @@ public class LogoutValidation extends Base {
 		driver = initializeDriver();
 		driver.get(prop.getProperty("url"));
 		// open google account login page
-
 		Base.loginHome();
 	}
 
 	@Test
-	public void logoutValidation() {
-
-		LogoutPage logout = new LogoutPage(driver);
-		logout.getAccountBtn().click(); // click "account" button to get the
-										// "sign out" button
-		logout.getSignOutBtn().click(); // click "sign out" button will logout
-										// the account
-		Assert.assertEquals(logout.getLogoutMessage().getText(),
-				"Choose an account");
-		// After logout the message of "Choose an account" should show up.
+	public void homeValidations() {
+		HomePage home = new HomePage(driver);
+		// valid "username" and "password" will successfully log into homepage
+		// Verify the visible message of "Welcome, automation test"
+		Assert.assertEquals(home.getWelcomeHome().getText(),
+				"Welcome, automation test");
 	}
 
 	@AfterMethod
 	public void teardown() {
+
+		Base.logoutHome();
 		driver.close();
 		driver = null;
 	}
+
 }

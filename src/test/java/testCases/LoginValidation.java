@@ -3,6 +3,8 @@ package testCases;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -30,7 +32,6 @@ public class LoginValidation extends Base {
 		login.getIdentifier().sendKeys(Username);
 		// Login by using the "Username" defined in dataProvider-"getUsername"
 		login.getIdentifierNext().click();
-		Thread.sleep(2000);
 
 		// if the "Username" is invalid
 		// Validate whether the error message equals the expected value
@@ -38,8 +39,13 @@ public class LoginValidation extends Base {
 			System.out.println(login.getIdentifierError().getText());
 			Assert.assertEquals(login.getIdentifierError().getText(),
 					identifierMessage);
-		} else { // if the "Username" is valid, will show the selected user
-					// account
+		} else { // Valid "Username" will show the selected user account
+
+			// Using Explicit Wait for waiting "password" enter box to be
+			// visible
+			WebDriverWait wait = new WebDriverWait(driver, 15);
+			wait.until(ExpectedConditions.visibilityOf(login.getPassword()));
+
 			System.out.println("the selected account is: "
 					+ login.getSelectedAccount().getText());
 			System.out.println(identifierMessage);

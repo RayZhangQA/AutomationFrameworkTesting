@@ -17,11 +17,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import pageObjects.LoginPage;
+import pageObjects.LogoutPage;
 
 public class Base {
 
 	public static WebDriver driver;
-	public Properties prop;
+	public static Properties prop;
 
 	public WebDriver initializeDriver() throws IOException {
 
@@ -65,6 +70,29 @@ public class Base {
 		FileUtils.copyFile(scrFile, new File(scrFileName));
 		System.out.println("The screenshot of failed testcase has stored as "
 				+ scrFileName);
+	}
+
+	public static void loginHome() {
+		LoginPage login = new LoginPage(driver);
+		login.getIdentifier().sendKeys(prop.getProperty("username"));
+		// Login by using the "Username" defined in dataProvider-"getUsername"
+		login.getIdentifierNext().click();
+
+		// Using Explicit Wait for waiting "password" enter box to be visible
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		wait.until(ExpectedConditions.visibilityOf(login.getPassword()));
+
+		// Login by using the "password" defined in dataProvider-"getPassword"
+		login.getPassword().sendKeys(prop.getProperty("password"));
+		login.getPasswordNext().click();
+	}
+
+	public static void logoutHome() {
+		LogoutPage logout = new LogoutPage(driver);
+		logout.getAccountBtn().click();
+		// click "account" button to get the "sign out" button
+		logout.getSignOutBtn().click();
+		// click "sign out" button will logout the account
 	}
 
 }

@@ -1,151 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+<testng-results skipped="0" failed="0" ignored="1" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="140293" started-at="2020-10-14T23:19:46 EDT" finished-at="2020-10-14T23:22:07 EDT">
+  <suite name="Default suite" duration-ms="53445" started-at="2020-10-15T08:58:26 EDT" finished-at="2020-10-15T08:59:19 EDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="140293" started-at="2020-10-14T23:19:46 EDT" finished-at="2020-10-14T23:22:07 EDT">
-      <class name="testCases.LogoutValidation">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LogoutValidation@34c4973]" name="initialize" is-config="true" duration-ms="3787" started-at="2020-10-14T23:21:53 EDT" finished-at="2020-10-14T23:21:57 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="logoutValidation()[pri:0, instance:testCases.LogoutValidation@34c4973]" name="logoutValidation" duration-ms="5173" started-at="2020-10-14T23:21:57 EDT" finished-at="2020-10-14T23:22:02 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutValidation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LogoutValidation@34c4973]" name="teardown" is-config="true" duration-ms="4376" started-at="2020-10-14T23:22:02 EDT" finished-at="2020-10-14T23:22:07 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.LogoutValidation -->
+    <test name="Default test" duration-ms="53445" started-at="2020-10-15T08:58:26 EDT" finished-at="2020-10-15T08:59:19 EDT">
       <class name="testCases.LoginValidation">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="4528" started-at="2020-10-14T23:19:46 EDT" finished-at="2020-10-14T23:19:51 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="initialize" is-config="true" duration-ms="3931" started-at="2020-10-15T08:58:26 EDT" finished-at="2020-10-15T08:58:30 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="passwordValidations" duration-ms="4149" started-at="2020-10-14T23:19:51 EDT" data-provider="getPassword" finished-at="2020-10-14T23:19:55 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Appium@558]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Welcome, automation test]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passwordValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4399" started-at="2020-10-14T23:19:55 EDT" finished-at="2020-10-14T23:19:59 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="3205" started-at="2020-10-14T23:19:59 EDT" finished-at="2020-10-14T23:20:03 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="passwordValidations" duration-ms="1767" started-at="2020-10-14T23:20:03 EDT" data-provider="getPassword" finished-at="2020-10-14T23:20:04 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Enter a password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passwordValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4408" started-at="2020-10-14T23:20:04 EDT" finished-at="2020-10-14T23:20:09 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="3263" started-at="2020-10-14T23:20:09 EDT" finished-at="2020-10-14T23:20:12 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="passwordValidations" duration-ms="2359" started-at="2020-10-14T23:20:12 EDT" data-provider="getPassword" finished-at="2020-10-14T23:20:14 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Enter your password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passwordValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4404" started-at="2020-10-14T23:20:14 EDT" finished-at="2020-10-14T23:20:19 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="3214" started-at="2020-10-14T23:20:19 EDT" finished-at="2020-10-14T23:20:22 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="passwordValidations" duration-ms="2250" started-at="2020-10-14T23:20:22 EDT" data-provider="getPassword" finished-at="2020-10-14T23:20:24 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[cccccdddddlllll]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Wrong password. Try again or click Forgot password to reset it.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passwordValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4411" started-at="2020-10-14T23:20:24 EDT" finished-at="2020-10-14T23:20:29 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="3762" started-at="2020-10-14T23:20:29 EDT" finished-at="2020-10-14T23:20:32 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="passwordValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="passwordValidations" duration-ms="2051" started-at="2020-10-14T23:20:32 EDT" data-provider="getPassword" finished-at="2020-10-14T23:20:35 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[appium@558]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Wrong password. Try again or click Forgot password to reset it.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passwordValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4395" started-at="2020-10-14T23:20:35 EDT" finished-at="2020-10-14T23:20:39 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="3563" started-at="2020-10-14T23:20:39 EDT" finished-at="2020-10-14T23:20:42 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="usernameValidations" duration-ms="2762" started-at="2020-10-14T23:20:42 EDT" data-provider="getUsername" finished-at="2020-10-14T23:20:45 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@30a3107a]" name="usernameValidations" duration-ms="1763" started-at="2020-10-15T08:58:30 EDT" data-provider="getUsername" finished-at="2020-10-15T08:58:32 EDT">
           <params>
             <param index="0">
               <value>
@@ -161,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4408" started-at="2020-10-14T23:20:45 EDT" finished-at="2020-10-14T23:20:50 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="teardown" is-config="true" duration-ms="4417" started-at="2020-10-15T08:58:32 EDT" finished-at="2020-10-15T08:58:36 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="3766" started-at="2020-10-14T23:20:50 EDT" finished-at="2020-10-14T23:20:53 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="initialize" is-config="true" duration-ms="3722" started-at="2020-10-15T08:58:36 EDT" finished-at="2020-10-15T08:58:40 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="usernameValidations" duration-ms="2837" started-at="2020-10-14T23:20:53 EDT" data-provider="getUsername" finished-at="2020-10-14T23:20:56 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@30a3107a]" name="usernameValidations" duration-ms="1049" started-at="2020-10-15T08:58:40 EDT" data-provider="getUsername" finished-at="2020-10-15T08:58:41 EDT">
           <params>
             <param index="0">
               <value>
@@ -185,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4395" started-at="2020-10-14T23:20:56 EDT" finished-at="2020-10-14T23:21:01 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="teardown" is-config="true" duration-ms="4413" started-at="2020-10-15T08:58:41 EDT" finished-at="2020-10-15T08:58:45 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="3354" started-at="2020-10-14T23:21:01 EDT" finished-at="2020-10-14T23:21:04 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="initialize" is-config="true" duration-ms="3117" started-at="2020-10-15T08:58:45 EDT" finished-at="2020-10-15T08:58:48 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="usernameValidations" duration-ms="2768" started-at="2020-10-14T23:21:04 EDT" data-provider="getUsername" finished-at="2020-10-14T23:21:07 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@30a3107a]" name="usernameValidations" duration-ms="983" started-at="2020-10-15T08:58:48 EDT" data-provider="getUsername" finished-at="2020-10-15T08:58:49 EDT">
           <params>
             <param index="0">
               <value>
@@ -209,15 +75,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4397" started-at="2020-10-14T23:21:07 EDT" finished-at="2020-10-14T23:21:11 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="teardown" is-config="true" duration-ms="4417" started-at="2020-10-15T08:58:49 EDT" finished-at="2020-10-15T08:58:54 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="3260" started-at="2020-10-14T23:21:11 EDT" finished-at="2020-10-14T23:21:14 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="initialize" is-config="true" duration-ms="3148" started-at="2020-10-15T08:58:54 EDT" finished-at="2020-10-15T08:58:57 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="usernameValidations" duration-ms="2809" started-at="2020-10-14T23:21:14 EDT" data-provider="getUsername" finished-at="2020-10-14T23:21:17 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@30a3107a]" name="usernameValidations" duration-ms="979" started-at="2020-10-15T08:58:57 EDT" data-provider="getUsername" finished-at="2020-10-15T08:58:58 EDT">
           <params>
             <param index="0">
               <value>
@@ -233,15 +99,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4366" started-at="2020-10-14T23:21:17 EDT" finished-at="2020-10-14T23:21:22 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="teardown" is-config="true" duration-ms="4420" started-at="2020-10-15T08:58:58 EDT" finished-at="2020-10-15T08:59:02 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="3417" started-at="2020-10-14T23:21:22 EDT" finished-at="2020-10-14T23:21:25 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="initialize" is-config="true" duration-ms="3351" started-at="2020-10-15T08:59:02 EDT" finished-at="2020-10-15T08:59:06 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="usernameValidations" duration-ms="2815" started-at="2020-10-14T23:21:25 EDT" data-provider="getUsername" finished-at="2020-10-14T23:21:28 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@30a3107a]" name="usernameValidations" duration-ms="709" started-at="2020-10-15T08:59:06 EDT" data-provider="getUsername" finished-at="2020-10-15T08:59:06 EDT">
           <params>
             <param index="0">
               <value>
@@ -257,15 +123,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4398" started-at="2020-10-14T23:21:28 EDT" finished-at="2020-10-14T23:21:32 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="teardown" is-config="true" duration-ms="95" started-at="2020-10-15T08:59:06 EDT" finished-at="2020-10-15T08:59:06 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="3344" started-at="2020-10-14T23:21:32 EDT" finished-at="2020-10-14T23:21:36 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="initialize" is-config="true" duration-ms="3150" started-at="2020-10-15T08:59:06 EDT" finished-at="2020-10-15T08:59:10 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="usernameValidations" duration-ms="2770" started-at="2020-10-14T23:21:36 EDT" data-provider="getUsername" finished-at="2020-10-14T23:21:38 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@30a3107a]" name="usernameValidations" duration-ms="825" started-at="2020-10-15T08:59:10 EDT" data-provider="getUsername" finished-at="2020-10-15T08:59:10 EDT">
           <params>
             <param index="0">
               <value>
@@ -281,15 +147,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4397" started-at="2020-10-14T23:21:38 EDT" finished-at="2020-10-14T23:21:43 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="teardown" is-config="true" duration-ms="126" started-at="2020-10-15T08:59:10 EDT" finished-at="2020-10-15T08:59:10 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="initialize" is-config="true" duration-ms="3252" started-at="2020-10-14T23:21:43 EDT" finished-at="2020-10-14T23:21:46 EDT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="initialize" is-config="true" duration-ms="3188" started-at="2020-10-15T08:59:10 EDT" finished-at="2020-10-15T08:59:14 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="usernameValidations" duration-ms="2893" started-at="2020-10-14T23:21:46 EDT" data-provider="getUsername" finished-at="2020-10-14T23:21:49 EDT">
+        <test-method status="PASS" signature="usernameValidations(java.lang.String, java.lang.String)[pri:0, instance:testCases.LoginValidation@30a3107a]" name="usernameValidations" duration-ms="1187" started-at="2020-10-15T08:59:14 EDT" data-provider="getUsername" finished-at="2020-10-15T08:59:15 EDT">
           <params>
             <param index="0">
               <value>
@@ -305,11 +171,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usernameValidations -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@33c7e1bb]" name="teardown" is-config="true" duration-ms="4375" started-at="2020-10-14T23:21:49 EDT" finished-at="2020-10-14T23:21:53 EDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testCases.LoginValidation@30a3107a]" name="teardown" is-config="true" duration-ms="4423" started-at="2020-10-15T08:59:15 EDT" finished-at="2020-10-15T08:59:19 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.LoginValidation -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

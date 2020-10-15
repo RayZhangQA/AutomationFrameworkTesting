@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="resources.ScreenshotListener"/>
+    <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
@@ -13,13 +14,6 @@
           <include name="usernameValidations" invocation-numbers="1 2 3 4 5 6"/>
         </methods>
       </class> <!-- testCases.LoginValidation -->
-      <class name="testCases.LogoutValidation">
-        <methods>
-          <include name="initialize"/>
-          <include name="teardown"/>
-          <include name="logoutValidation"/>
-        </methods>
-      </class> <!-- testCases.LogoutValidation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

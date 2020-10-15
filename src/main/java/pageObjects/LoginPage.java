@@ -29,7 +29,6 @@ public class LoginPage {
 	}
 
 	By selectedAccount = By.xpath("//div[@id='profileIdentifier']");
-	// By selectedAccount = By.className("KTeGk");
 	public WebElement getSelectedAccount() {
 		return driver.findElement(selectedAccount);
 	}
@@ -53,6 +52,5 @@ public class LoginPage {
 	public WebElement getWelcomeHome() {
 		return driver.findElement(welcomeHome);
 	}
-	// By forgetEmail = By.className(className)
 
 }
