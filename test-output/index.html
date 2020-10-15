@@ -5,7 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -23,6 +24,7 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
@@ -49,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\Administrator\eclipse-workspace\E2EProject\testng.xml</span>
+                    <span>D:\eclipse-workspace\AutomationFrameworkTesting\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Academy.validateTitle" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LogoutValidation" hash-for-method="logoutValidation">logoutValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -116,17 +118,62 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Academy.validateNavigationBar" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="passwordValidations(, Enter a password)">passwordValidations(, Enter a password)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Academy.HomePage" hash-for-method="basePageNavigation(restrictedUser@qw.com, password12345678, This is a Restricted User!)">basePageNavigation(restrictedUser@qw.com, password12345678, This is a Restricted User!)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="passwordValidations(appium@558, Wrong password. Try again or click Forgot password to reset it.)">passwordValidations(appium@558, Wrong password. Try again or click Forgot password to reset it.)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Academy.HomePage" hash-for-method="basePageNavigation(nonRestrictedUser@qw.com, password123456, This is a nonRestricted User!)">basePageNavigation(nonRestrictedUser@qw.com, password123456, This is a nonRestricted User!)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="passwordValidations( , Enter your password)">passwordValidations( , Enter your password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="passwordValidations(cccccdddddlllll, Wrong password. Try again or click Forgot password to reset it.)">passwordValidations(cccccdddddlllll, Wrong password. Try again or click Forgot password to reset it.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="passwordValidations(Appium@558, Welcome, automation test)">passwordValidations(Appium@558, Welcome, automation test)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="usernameValidations(, Enter an email or phone number)">usernameValidations(, Enter an email or phone number)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="usernameValidations(!!!!!@@@@@, Enter a valid email or phone number)">usernameValidations(!!!!!@@@@@, Enter a valid email or phone number)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="usernameValidations(automation558@gmail.com, automation558@gmail.com)">usernameValidations(automation558@gmail.com, automation558@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="usernameValidations(cccccdddddlllll, Couldn&#039;t find your Google Account)">usernameValidations(cccccdddddlllll, Couldn't find your Google Account)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="usernameValidations( , Enter an email or phone number)">usernameValidations( , Enter an email or phone number)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="usernameValidations(automation559@gmail.com, Couldn&#039;t find your Google Account)">usernameValidations(automation559@gmail.com, Couldn't find your Google Account)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoginValidation" hash-for-method="usernameValidations(6472999999, Couldn&#039;t find your Google Account. Try using your email address instead.)">usernameValidations(6472999999, Couldn't find your Google Account. Try using your email address instead.)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -144,18 +191,35 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Academy.validateTitle</span>
+              <span class="class-name">testCases.LogoutValidation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation">
-                  </a> <!-- basePageNavigation -->
-                  <span class="method-name">basePageNavigation</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [FEATURED COURSES ABC] but found [FEATURED COURSES]
-	at Academy.validateTitle.basePageNavigation(validateTitle.java:34)
+                  <a name="logoutValidation">
+                  </a> <!-- logoutValidation -->
+                  <span class="method-name">logoutValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;RAYDESKTOP&apos;, ip: &apos;192.168.2.26&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53858}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1d6733016c7765ca48463368364857b3
+*** Element info: {Using=id, value=identifierId}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.LoginPage.getIdentifier(LoginPage.java:17)
+	at testCases.LogoutValidation.logoutValidation(LogoutValidation.java:26)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 32 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -164,38 +228,103 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Academy.HomePage</span>
+              <span class="class-name">testCases.LoginValidation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation(restrictedUser@qw.com, password12345678, This is a Restricted User!)">
-                  </a> <!-- basePageNavigation(restrictedUser@qw.com, password12345678, This is a Restricted User!) -->
-                  <span class="method-name">basePageNavigation</span>
-                  <span class="parameters">(restrictedUser@qw.com, password12345678, This is a Restricted User!)</span>
+                  <a name="passwordValidations(, Enter a password)">
+                  </a> <!-- passwordValidations(, Enter a password) -->
+                  <span class="method-name">passwordValidations</span>
+                  <span class="parameters">(, Enter a password)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation(nonRestrictedUser@qw.com, password123456, This is a nonRestricted User!)">
-                  </a> <!-- basePageNavigation(nonRestrictedUser@qw.com, password123456, This is a nonRestricted User!) -->
-                  <span class="method-name">basePageNavigation</span>
-                  <span class="parameters">(nonRestrictedUser@qw.com, password123456, This is a nonRestricted User!)</span>
+                  <a name="passwordValidations(appium@558, Wrong password. Try again or click Forgot password to reset it.)">
+                  </a> <!-- passwordValidations(appium@558, Wrong password. Try again or click Forgot password to reset it.) -->
+                  <span class="method-name">passwordValidations</span>
+                  <span class="parameters">(appium@558, Wrong password. Try again or click Forgot password to reset it.)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Academy.validateNavigationBar</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation">
-                  </a> <!-- basePageNavigation -->
-                  <span class="method-name">basePageNavigation</span>
+                  <a name="passwordValidations( , Enter your password)">
+                  </a> <!-- passwordValidations( , Enter your password) -->
+                  <span class="method-name">passwordValidations</span>
+                  <span class="parameters">( , Enter your password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="passwordValidations(cccccdddddlllll, Wrong password. Try again or click Forgot password to reset it.)">
+                  </a> <!-- passwordValidations(cccccdddddlllll, Wrong password. Try again or click Forgot password to reset it.) -->
+                  <span class="method-name">passwordValidations</span>
+                  <span class="parameters">(cccccdddddlllll, Wrong password. Try again or click Forgot password to reset it.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="passwordValidations(Appium@558, Welcome, automation test)">
+                  </a> <!-- passwordValidations(Appium@558, Welcome, automation test) -->
+                  <span class="method-name">passwordValidations</span>
+                  <span class="parameters">(Appium@558, Welcome, automation test)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="usernameValidations(, Enter an email or phone number)">
+                  </a> <!-- usernameValidations(, Enter an email or phone number) -->
+                  <span class="method-name">usernameValidations</span>
+                  <span class="parameters">(, Enter an email or phone number)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="usernameValidations(!!!!!@@@@@, Enter a valid email or phone number)">
+                  </a> <!-- usernameValidations(!!!!!@@@@@, Enter a valid email or phone number) -->
+                  <span class="method-name">usernameValidations</span>
+                  <span class="parameters">(!!!!!@@@@@, Enter a valid email or phone number)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="usernameValidations(automation558@gmail.com, automation558@gmail.com)">
+                  </a> <!-- usernameValidations(automation558@gmail.com, automation558@gmail.com) -->
+                  <span class="method-name">usernameValidations</span>
+                  <span class="parameters">(automation558@gmail.com, automation558@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="usernameValidations(cccccdddddlllll, Couldn&#039;t find your Google Account)">
+                  </a> <!-- usernameValidations(cccccdddddlllll, Couldn't find your Google Account) -->
+                  <span class="method-name">usernameValidations</span>
+                  <span class="parameters">(cccccdddddlllll, Couldn't find your Google Account)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="usernameValidations( , Enter an email or phone number)">
+                  </a> <!-- usernameValidations( , Enter an email or phone number) -->
+                  <span class="method-name">usernameValidations</span>
+                  <span class="parameters">( , Enter an email or phone number)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="usernameValidations(automation559@gmail.com, Couldn&#039;t find your Google Account)">
+                  </a> <!-- usernameValidations(automation559@gmail.com, Couldn't find your Google Account) -->
+                  <span class="method-name">usernameValidations</span>
+                  <span class="parameters">(automation559@gmail.com, Couldn't find your Google Account)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="usernameValidations(6472999999, Couldn&#039;t find your Google Account. Try using your email address instead.)">
+                  </a> <!-- usernameValidations(6472999999, Couldn't find your Google Account. Try using your email address instead.) -->
+                  <span class="method-name">usernameValidations</span>
+                  <span class="parameters">(6472999999, Couldn't find your Google Account. Try using your email address instead.)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,31 +332,19 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\eclipse-workspace\E2EProject\testng.xml</span>
+            <span class="header-content">D:\eclipse-workspace\AutomationFrameworkTesting\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;Academy.listeners&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Validate the Title of Home Page&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Academy.validateTitle&quot;/&gt;
+      &lt;class name=&quot;testCases.LoginValidation&quot;/&gt;
+      &lt;class name=&quot;testCases.LogoutValidation&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validate the Title of Home Page --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Validate the Navigation Bar of Home Page&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Academy.validateNavigationBar&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validate the Navigation Bar of Home Page --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Validate User Login&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Academy.HomePage&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validate User Login --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -239,13 +356,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Validate the Title of Home Page (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Validate the Navigation Bar of Home Page (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Validate User Login (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,28 +382,64 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'basePageNavigation')
-data.setCell(0, 2, 'Academy.HomePage')
-data.setCell(0, 3, 12167);
+data.setCell(0, 1, 'passwordValidations')
+data.setCell(0, 2, 'testCases.LoginValidation')
+data.setCell(0, 3, 3679);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'basePageNavigation')
-data.setCell(1, 2, 'Academy.HomePage')
-data.setCell(1, 3, 6600);
+data.setCell(1, 1, 'usernameValidations')
+data.setCell(1, 2, 'testCases.LoginValidation')
+data.setCell(1, 3, 2921);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'basePageNavigation')
-data.setCell(2, 2, 'Academy.validateTitle')
-data.setCell(2, 3, 3747);
+data.setCell(2, 1, 'usernameValidations')
+data.setCell(2, 2, 'testCases.LoginValidation')
+data.setCell(2, 3, 2855);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'basePageNavigation')
-data.setCell(3, 2, 'Academy.validateNavigationBar')
-data.setCell(3, 3, 3653);
+data.setCell(3, 1, 'usernameValidations')
+data.setCell(3, 2, 'testCases.LoginValidation')
+data.setCell(3, 3, 2832);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'usernameValidations')
+data.setCell(4, 2, 'testCases.LoginValidation')
+data.setCell(4, 3, 2821);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'usernameValidations')
+data.setCell(5, 2, 'testCases.LoginValidation')
+data.setCell(5, 3, 2810);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'usernameValidations')
+data.setCell(6, 2, 'testCases.LoginValidation')
+data.setCell(6, 3, 2806);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'usernameValidations')
+data.setCell(7, 2, 'testCases.LoginValidation')
+data.setCell(7, 3, 2794);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'passwordValidations')
+data.setCell(8, 2, 'testCases.LoginValidation')
+data.setCell(8, 3, 2140);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'passwordValidations')
+data.setCell(9, 2, 'testCases.LoginValidation')
+data.setCell(9, 3, 2045);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'passwordValidations')
+data.setCell(10, 2, 'testCases.LoginValidation')
+data.setCell(10, 3, 1872);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'passwordValidations')
+data.setCell(11, 2, 'testCases.LoginValidation')
+data.setCell(11, 3, 1704);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'logoutValidation')
+data.setCell(12, 2, 'testCases.LogoutValidation')
+data.setCell(12, 3, 52);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -318,58 +465,177 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Academy.validateTitle</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.LogoutValidation</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.LoginValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">4443 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">passwordValidations(Appium@558, Welcome, automation test)</span>
+                <span class="method-start">7821 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">11503 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">11555 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">passwordValidations(, Enter a password)</span>
+                <span class="method-start">15281 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">16986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">21386 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">passwordValidations( , Enter your password)</span>
+                <span class="method-start">25353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">27494 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">31896 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">passwordValidations(cccccdddddlllll, Wrong password. Try again or click Forgot password to reset it.)</span>
+                <span class="method-start">35191 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">37237 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">41644 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">passwordValidations(appium@558, Wrong password. Try again or click Forgot password to reset it.)</span>
+                <span class="method-start">44977 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">46850 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">51246 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">usernameValidations(automation558@gmail.com, automation558@gmail.com)</span>
+                <span class="method-start">55150 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">57972 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">62376 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">usernameValidations(automation559@gmail.com, Couldn't find your Google Account)</span>
+                <span class="method-start">65792 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">68587 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">72980 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">usernameValidations(6472999999, Couldn't find your Google Account. Try using your email address instead.)</span>
+                <span class="method-start">76746 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">79553 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">83944 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">usernameValidations(cccccdddddlllll, Couldn't find your Google Account)</span>
+                <span class="method-start">87410 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">90266 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">94658 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">usernameValidations(, Enter an email or phone number)</span>
+                <span class="method-start">98033 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">100955 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">105329 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">usernameValidations( , Enter an email or phone number)</span>
+                <span class="method-start">108789 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">111622 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">115996 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">usernameValidations(!!!!!@@@@@, Enter a valid email or phone number)</span>
+                <span class="method-start">119302 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">122112 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.LogoutValidation</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">7319 ms</span>
+                <span class="method-name">logoutValidation</span>
+                <span class="method-start">126507 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">teardown</span>
-                <span class="method-start">13071 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Academy.validateNavigationBar</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">15849 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">20542 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">24200 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Academy.HomePage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">24779 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">basePageNavigation(nonRestrictedUser@qw.com, password123456, This is a nonRestricted User!)</span>
-                <span class="method-start">29233 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">basePageNavigation(restrictedUser@qw.com, password12345678, This is a Restricted User!)</span>
-                <span class="method-start">41404 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">48006 ms</span>
+                <span class="method-start">126561 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>
